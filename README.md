@@ -66,6 +66,35 @@ This project compares **three translation strategies** on a curated dataset of 2
 
 ---
 
+## Dataset: OPUS Parallel Corpus
+
+This project uses **OPUS** (Open Parallel Corpus) — one of the largest freely available collections of translated texts on the web.
+
+| Source | Description | Size |
+|--------|-------------|------|
+| **OPUS-100** | Sampled 100-language corpus | ~1M pairs/language |
+| **OPUS Books** | Translated literary texts | 100k+ pairs |
+| **Tatoeba MT** | Short everyday sentences | 50k+ pairs |
+| **WikiMatrix** | Wikipedia-mined parallel sentences | 100k+ pairs |
+
+The downloader pulls up to **10,000 pairs per language** by default (configurable up to millions) and merges them with the hand-crafted technical glossary so domain-specific terms are always correctly represented.
+
+### How to download OPUS data
+
+```bash
+# Default: 10,000 pairs per language
+python main.py download
+
+# Custom size (e.g. 50,000 pairs)
+python main.py download --opus-size 50000
+```
+
+Downloaded files are saved to `data/opus/`:
+- `opus_{language}.csv` — raw OPUS pairs
+- `merged_{language}.csv` — OPUS + technical glossary (used for fine-tuning)
+
+---
+
 ## Quick Start
 
 ### 1. Install dependencies

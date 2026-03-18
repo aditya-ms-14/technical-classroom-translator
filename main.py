@@ -23,6 +23,26 @@ sys.path.insert(0, str(SRC_DIR))
 LANGUAGES = ['hindi', 'tamil', 'telugu', 'kannada']
 
 
+def step0_download_opus(args):
+    print("\n" + "="*60)
+    print("STEP 0: DOWNLOAD OPUS DATASET")
+    print("="*60)
+    from download_opus import download_for_language, merge_with_glossary
+    opus_dir = DATA_DIR / "opus"
+    opus_dir.mkdir(exist_ok=True)
+    target_size = getattr(args, 'opus_size', 10000)
+    for language in LANGUAGES:
+        result = download_for_language(language, opus_dir, target_size=target_size)
+        if result["output_file"]:
+            print(f"\n  Merging {language} OPUS data with glossary ...")
+            merge_with_glossary(
+                opus_path           = opus_dir / f"opus_{language}.csv",
+                glossary_terms_path = DATA_DIR / "technical_terms.csv",
+                language            = language,
+                merged_path         = opus_dir / f"merged_{language}.csv",
+            )
+
+
 def step1_baseline(args):
     print("\n" + "="*60)
     print("STEP 1: BASELINE TRANSLATION")
@@ -99,6 +119,8 @@ def step4_evaluate(args):
 
 
 def run_all(args):
+    if not getattr(args, 'skip_opus', False):
+        step0_download_opus(args)
     step1_baseline(args)
     step2_glossary(args)
     if not args.skip_finetune:
@@ -152,6 +174,12 @@ if __name__ == "__main__":
     )
     subparsers = parser.add_subparsers()
 
+    # Step 0: OPUS download
+    p0 = subparsers.add_parser('download', help='Download OPUS parallel corpus')
+    p0.add_argument('--opus-size', type=int, default=10000,
+                    help='Sentence pairs per language (default: 10000)')
+    p0.set_defaults(func=step0_download_opus)
+
     # Individual steps
     p1 = subparsers.add_parser('baseline', help='Run baseline translation')
     p1.set_defaults(func=step1_baseline)
@@ -169,6 +197,10 @@ if __name__ == "__main__":
     p_all = subparsers.add_parser('all', help='Run full pipeline')
     p_all.add_argument('--skip-finetune', action='store_true',
                        help='Skip fine-tuning (faster, glossary only)')
+    p_all.add_argument('--skip-opus', action='store_true',
+                       help='Skip OPUS download (use existing data)')
+    p_all.add_argument('--opus-size', type=int, default=10000,
+                       help='OPUS sentence pairs per language (default: 10000)')
     p_all.set_defaults(func=run_all)
 
     # Demo (no model download)
@@ -182,6 +214,9 @@ if __name__ == "__main__":
     else:
         parser.print_help()
         print("\nQuick start:")
-        print("  python main.py demo          # No model download needed")
-        print("  python main.py all           # Full pipeline")
-        print("  python main.py all --skip-finetune  # Glossary only (faster)")
+        print("  python main.py demo                        # No download needed")
+        print("  python main.py download                    # Download OPUS data only")
+        print("  python main.py all                         # Full pipeline (recommended)")
+        print("  python main.py all --skip-opus             # Skip OPUS, use existing data")
+        print("  python main.py all --opus-size 50000       # Download 50k pairs per language")
+        print("  python main.py all --skip-finetune         # Glossary only (fastest)")
