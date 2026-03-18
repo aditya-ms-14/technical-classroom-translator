@@ -1,0 +1,41 @@
+term,definition,domain,hindi,tamil,telugu,kannada
+Neural Network,A computational model inspired by the human brain,AI/ML,न्यूरल नेटवर्क,நரம்பியல் வலையமைப்பு,నాడీ నెట్‌వర్క్,ನರ್ವಲ್ ನೆಟ್‌ವರ್ಕ್
+Backpropagation,Algorithm for training neural networks by computing gradients,AI/ML,बैकप्रोपेगेशन,பின்னோக்கி பரப்புதல்,బ్యాక్‌ప్రాపగేషన్,ಬ್ಯಾಕ್‌ಪ್ರಾಪಗೇಷನ್
+Gradient Descent,Optimization algorithm that minimizes loss function,AI/ML,ग्रेडिएंट डिसेंट,சாய்வு இறக்கம்,గ్రేడియంట్ డిసెంట్,ಗ್ರೇಡಿಯಂಟ್ ಡಿಸೆಂಟ್
+Overfitting,Model performs well on training but poorly on new data,AI/ML,ओवरफिटिंग,அதிகப்படியான பொருத்தம்,ఓవర్‌ఫిట్టింగ్,ಓವರ್‌ಫಿಟ್ಟಿಂಗ್
+Transformer,Attention-based deep learning architecture,AI/ML,ट्रांसफार्मर,மாற்றி,ట్రాన్స్ఫార్మర్,ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್
+Attention Mechanism,Component that weighs relevance of input tokens,AI/ML,अटेंशन मैकेनिज्म,கவன பொறிமுறை,అటెన్షన్ మెకానిజం,ಅಟೆನ್ಷನ್ ಮೆಕ್ಯಾನಿಸಂ
+Loss Function,Measures difference between predicted and actual output,AI/ML,लॉस फंक्शन,இழப்பு செயல்பாடு,లాస్ ఫంక్షన్,ಲಾಸ್ ಫಂಕ್ಷನ್
+Epoch,One full pass through training dataset,AI/ML,एपॉक,சகாப்தம்,ఎపాక్,ಎಪಾಕ್
+Batch Size,Number of samples per gradient update,AI/ML,बैच साइज,தொகுப்பு அளவு,బ్యాచ్ సైజ్,ಬ್ಯಾಚ್ ಸೈಜ್
+Learning Rate,Step size in gradient descent optimization,AI/ML,लर्निंग रेट,கற்றல் விகிதம்,లెర్నింగ్ రేట్,ಲರ್ನಿಂಗ್ ರೇಟ್
+Convolutional Neural Network,Neural network for processing grid-like data,AI/ML,कन्वोलूशनल न्यूरल नेटवर्क,சுருட்டல் நரம்பியல் வலையமைப்பு,కన్వల్యూషనల్ న్యూరల్ నెట్‌వర్క్,ಕನ್ವಲ್ಯೂಷನಲ್ ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್
+Recurrent Neural Network,Neural network with loops for sequential data,AI/ML,रिकरेंट न्यूरल नेटवर्क,மீண்டும் நரம்பியல் வலையமைப்பு,రికరెంట్ న్యూరల్ నెట్‌వర్క్,ರಿಕರೆಂಟ್ ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್
+Natural Language Processing,AI field for understanding human language,AI/ML,नेचुरल लैंग्वेज प्रोसेसिंग,இயற்கை மொழி செயலாக்கம்,నేచురల్ లాంగ్వేజ్ ప్రాసెసింగ్,ನ್ಯಾಚುರಲ್ ಲ್ಯಾಂಗ್ವೇಜ್ ಪ್ರಾಸೆಸಿಂಗ್
+Tokenization,Splitting text into smaller units,NLP,टोकनाइज़ेशन,சொல்முறிப்பு,టోకెనైజేషన్,ಟೋಕನೈಸೇಶನ್
+Embedding,Dense vector representation of words or tokens,NLP,एम्बेडिंग,உட்பொதிப்பு,ఎంబెడ్డింగ్,ಎಂಬೆಡ್ಡಿಂಗ್
+BLEU Score,Metric for evaluating machine translation quality,NLP,ब्लू स्कोर,நீல மதிப்பெண்,బ్లూ స్కోర్,ಬ್ಲೂ ಸ್ಕೋರ್
+Fine-tuning,Adapting pretrained model to specific task,AI/ML,फाइन-ट्यूनिंग,நுண்-சரிசெய்தல்,ఫైన్-ట్యూనింగ్,ಫೈನ್-ಟ್ಯೂನಿಂಗ್
+Transfer Learning,Using pretrained model knowledge for new tasks,AI/ML,ट्रांसफर लर्निंग,மாற்று கற்றல்,ట్రాన్స్ఫర్ లెర్నింగ్,ಟ್ರಾನ್ಸ್ಫರ್ ಲರ್ನಿಂಗ್
+Hyperparameter,Configuration settings of a model set before training,AI/ML,हाइपरपैरामीटर,அதிப்பண்பு,హైపర్‌పారామీటర్,ಹೈಪರ್‌ಪ್ಯಾರಾಮೀಟರ್
+Regularization,Technique to prevent overfitting,AI/ML,रेगुलराइज़ेशन,ஒழுங்குமுறை,రెగ్యులరైజేషన్,ರೆಗ್ಯುಲರೈಸೇಶನ್
+Dropout,Regularization by randomly deactivating neurons,AI/ML,ड्रॉपआउट,கைவிடல்,డ్రాప్‌అవుట్,ಡ್ರಾಪ್‌ಔಟ್
+Softmax,Function converting logits to probabilities,AI/ML,सॉफ्टमैक्स,மென்மையான அதிகபட்சம்,సాఫ్ట్‌మ్యాక్స్,ಸಾಫ್ಟ್‌ಮ್ಯಾಕ್ಸ್
+ReLU,Rectified Linear Unit activation function,AI/ML,रेलू,செவ்வகப் பகுதி செயல்பாடு,రెలూ,ರೆಲೂ
+Sigmoid,S-shaped activation function,AI/ML,सिग्मॉइड,சிக்மாய்டு,సిగ్మాయిడ్,ಸಿಗ್ಮಾಯ್ಡ್
+Feature Extraction,Identifying relevant patterns from raw data,AI/ML,फीचर एक्सट्रैक्शन,அம்சப் பிரித்தெடுத்தல்,ఫీచర్ ఎక్స్ట్రాక్షన్,ಫೀಚರ್ ಎಕ್ಸ್ಟ್ರಾಕ್ಷನ್
+Support Vector Machine,Supervised ML algorithm for classification,ML,सपोर्ट वेक्टर मशीन,ஆதரவு திசையன் இயந்திரம்,సపోర్ట్ వెక్టర్ మెషిన్,ಸಪೋರ್ಟ್ ವೆಕ್ಟರ್ ಮೆಷಿನ್
+Random Forest,Ensemble of decision trees,ML,रैंडम फॉरेस्ट,சீரற்ற காடு,రాండమ్ ఫారెస్ట్,ರ್ಯಾಂಡಮ್ ಫಾರೆಸ್ಟ್
+Clustering,Grouping similar data points together,ML,क्लस्टरिंग,கொத்தாக்கல்,క్లస్టరింగ్,ಕ್ಲಸ್ಟರಿಂಗ್
+Dimensionality Reduction,Reducing number of input features,ML,डाइमेंशनेलिटी रिडक्शन,பரிமாண குறைப்பு,డైమెన్షనాలిటీ రిడక్షన్,ಡೈಮೆನ್ಷನಾಲಿಟಿ ರಿಡಕ್ಷನ್
+Principal Component Analysis,Statistical technique for dimensionality reduction,ML,प्रिंसिपल कंपोनेंट एनालिसिस,முதன்மை கூறு பகுப்பாய்வு,ప్రిన్సిపల్ కాంపోనెంట్ అనాలిసిస్,ಪ್ರಿನ್ಸಿಪಲ್ ಕಾಂಪೋನೆಂಟ್ ಅನಾಲಿಸಿಸ್
+Reinforcement Learning,Learning through reward and punishment signals,AI/ML,रीइन्फोर्समेंट लर्निंग,வலுவூட்டல் கற்றல்,రీన్ఫోర్స్‌మెంట్ లెర్నింగ్,ರೀಇನ್‌ಫೋರ್ಸ್‌ಮೆಂಟ್ ಲರ್ನಿಂಗ್
+Generative Adversarial Network,Two-network architecture for generating data,AI/ML,जेनरेटिव एडवर्सेरियल नेटवर्क,உற்பத்தி விரோத வலையமைப்பு,జెనరేటివ్ అడ్వర్సేరియల్ నెట్‌వర్క్,ಜೆನರೇಟಿವ್ ಅಡ್ವರ್ಸೇರಿಯಲ್ ನೆಟ್‌ವರ್ಕ್
+Encoder,Neural network component that compresses input,AI/ML,एन्कोडर,குறியாக்கி,ఎన్‌కోడర్,ಎನ್‌ಕೋಡರ್
+Decoder,Neural network component that reconstructs output,AI/ML,डिकोडर,குறியவிழிப்பி,డీకోడర్,ಡೀಕೋಡರ್
+Corpus,Large collection of text used for training,NLP,कॉर्पस,உரை தொகுப்பு,కార్పస్,ಕಾರ್ಪಸ್
+Semantic Similarity,Measure of meaning closeness between texts,NLP,सेमांटिक सिमिलैरिटी,பொருளியல் ஒற்றுமை,సెమాంటిక్ సిమిలారిటీ,ಸೆಮ್ಯಾಂಟಿಕ್ ಸಿಮಿಲಾರಿಟಿ
+Named Entity Recognition,Identifying entities like names and locations in text,NLP,नेम्ड एंटिटी रिकग्निशन,பெயரிடப்பட்ட நிறுவன அங்கீகாரம்,నేమ్డ్ ఎంటిటీ రికగ్నిషన్,ನೇಮ್ಡ್ ಎಂಟಿಟಿ ರಿಕಗ್ನಿಷನ್
+Part of Speech Tagging,Labeling words with grammatical roles,NLP,पार्ट ऑफ स्पीच टैगिंग,பேச்சு பகுதி குறியிடல்,పార్ట్ ఆఫ్ స్పీచ్ ట్యాగింగ్,ಪಾರ್ಟ್ ಆಫ್ ಸ್ಪೀಚ್ ಟ್ಯಾಗಿಂಗ್
+Sentiment Analysis,Determining emotional tone of text,NLP,सेंटीमेंट एनालिसिस,உணர்வு பகுப்பாய்வு,సెంటిమెంట్ అనాలిసిస్,ಸೆಂಟಿಮೆಂಟ್ ಅನಾಲಿಸಿಸ್
+Machine Translation,Automatic translation between languages,NLP,मशीन ट्रांसलेशन,இயந்திர மொழிபெயர்ப்பு,మెషిన్ ట్రాన్స్లేషన్,ಮೆಷಿನ್ ಟ್ರಾನ್ಸ್ಲೇಷನ್

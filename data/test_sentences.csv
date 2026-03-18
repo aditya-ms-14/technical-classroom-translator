@@ -1,0 +1,26 @@
+id,english_sentence,domain,contains_terms
+1,The neural network uses backpropagation to update its weights during training.,AI/ML,"neural network,backpropagation"
+2,Gradient descent optimizes the loss function by adjusting the learning rate.,AI/ML,"gradient descent,loss function,learning rate"
+3,Overfitting occurs when the model memorizes training data instead of generalizing.,AI/ML,overfitting
+4,The transformer model uses an attention mechanism to process input sequences.,AI/ML,"transformer,attention mechanism"
+5,We need to tune the hyperparameters like batch size and number of epochs.,AI/ML,"hyperparameters,batch size,epoch"
+6,Dropout is a regularization technique that prevents overfitting in deep learning.,AI/ML,"dropout,regularization,overfitting"
+7,The convolutional neural network extracts features from image data automatically.,AI/ML,"convolutional neural network,feature extraction"
+8,Transfer learning allows us to fine-tune a pretrained model on a new dataset.,AI/ML,"transfer learning,fine-tuning"
+9,The encoder compresses the input and the decoder reconstructs the output sequence.,AI/ML,"encoder,decoder"
+10,Tokenization splits the input text into subword units before embedding.,NLP,"tokenization,embedding"
+11,The BLEU score measures how well the machine translation matches the reference.,NLP,"BLEU score,machine translation"
+12,Named entity recognition identifies people organizations and locations in text.,NLP,named entity recognition
+13,Sentiment analysis classifies text as positive negative or neutral.,NLP,sentiment analysis
+14,The corpus used for training contains millions of domain-specific sentences.,NLP,corpus
+15,Principal component analysis reduces the dimensionality of high-dimensional data.,ML,"principal component analysis,dimensionality reduction"
+16,Support vector machines find the optimal hyperplane for classification tasks.,ML,support vector machine
+17,Random forest combines multiple decision trees to improve prediction accuracy.,ML,random forest
+18,Clustering algorithms group similar data points based on distance metrics.,ML,clustering
+19,The softmax function converts raw logits into probability distributions.,AI/ML,softmax
+20,ReLU activation function introduces non-linearity into the neural network.,AI/ML,"ReLU,neural network"
+21,Semantic similarity measures how close two sentences are in meaning.,NLP,semantic similarity
+22,The recurrent neural network processes sequential data with hidden states.,AI/ML,recurrent neural network
+23,Generative adversarial networks consist of a generator and a discriminator.,AI/ML,generative adversarial network
+24,Part of speech tagging assigns grammatical labels to each word in a sentence.,NLP,part of speech tagging
+25,The sigmoid activation function squashes values between zero and one.,AI/ML,sigmoid
